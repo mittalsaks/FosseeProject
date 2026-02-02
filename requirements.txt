@@ -1,0 +1,5 @@
+tabulate
+rich
+numpy
+scipy
+scilab-kernel 

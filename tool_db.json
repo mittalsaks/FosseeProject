@@ -1,0 +1,18 @@
+{
+  "ngspice": {
+    "version": "36",
+    "dependencies": ["python3", "gcc"]
+  },
+  "kicad": {
+    "version": "6.0",
+    "dependencies": ["python3", "cmake"]
+  },
+  "verilator": {
+    "version": "5",
+    "dependencies": ["gcc", "make"]
+  },
+  "scilab": {
+    "version": "6.1",
+    "dependencies": ["java", "python3"]
+  }
+}
