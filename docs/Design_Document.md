@@ -47,7 +47,7 @@ The Automated Tool Manager follows a modular architecture where each component h
            v
 +----------------------+
 |   Tool Manager CLI   |
-| (main.py)    |
+|      (main.py)       |
 +----------+-----------+
            |
            v
