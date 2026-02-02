@@ -47,7 +47,7 @@ The Automated Tool Manager follows a modular architecture where each component h
            v
 +----------------------+
 |   Tool Manager CLI   |
-| (tool_manager.py)    |
+| (main.py)    |
 +----------+-----------+
            |
            v
@@ -75,7 +75,7 @@ The Automated Tool Manager follows a modular architecture where each component h
 
 ## 5. Module Breakdown
 
-### 5.1 Tool Manager CLI (`tool_manager.py`)
+### 5.1 Tool Manager CLI (`main.py`)
 
 - Acts as the **entry point** for the application.
 - Accepts user commands (e.g., run dependency checks).

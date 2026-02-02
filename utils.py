@@ -42,4 +42,16 @@ def get_os_type():
 def suggest_install_command(package_name):
     return get_install_command(package_name)
 
+import os
+import subprocess
+
+def install_verilator():
+    if os.name == "nt":
+        print("Windows detected.")
+        print("Please install Verilator using Chocolatey:")
+        print("  choco install verilator")
+    else:
+        print("Linux/macOS detected.")
+        print("Run the following command:")
+        print("  sudo apt install verilator")
 

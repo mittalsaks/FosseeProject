@@ -105,3 +105,15 @@ def show_summary():
     print(f"Total Tools: {total_tools}")
     print(f"Tools Ready: {tools_ready}")
     print(f"Total Missing Dependencies: {total_missing}")
+
+from dependency_checker import check_verilator
+from utils import install_verilator
+
+def main():
+    result = check_verilator()
+
+    if not result["installed"]:
+        print("Verilator not found.")
+        install_verilator()
+    else:
+        print(f"Verilator installed. Version: {result['version']}")

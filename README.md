@@ -1,6 +1,7 @@
 # eSim Automated Tool Manager
 
-An OS-independent **Automated Tool Manager** for eSim that focuses on **dependency checking** and a **user-friendly command-line interface (CLI)**. This tool helps users verify whether required external tools and their dependencies are correctly installed and compatible with their system.
+An OS-independent Automated Tool Manager for eSim that focuses on dependency checking and a user-friendly command-line interface (CLI).
+This tool helps users verify whether required external tools and their dependencies are correctly installed and compatible with their system.
 
 
 ## Project Overview
@@ -20,19 +21,17 @@ This project provides:
 ```
 eSim-Automated-Tool-Manager/
 │
-├── main.py                  # CLI entry point (tool manager)
+├── main.py                  # CLI entry point
 ├── dependency_checker.py    # Core dependency checking logic
-├── utils.py                 # Helper functions (OS detection, common utils)
+├── utils.py                 # OS detection & helper utilities
 ├── logger_config.py         # Logging configuration
 ├── tool_db.json             # Tool & dependency metadata
 ├── requirements.txt         # Python dependencies
-├── tool_manager.log         # Generated runtime logs
+├── tool_manager.log         # Runtime logs
 ├── README.md                # Project documentation
 │
-├── docs/
-│   └── Design_Document.md   # Detailed design document
-│
-└── __pycache__/             # Auto-generated (can be ignored )
+└── docs/
+    └── Design_Document.md   # Detailed design document
 ```
 
 
@@ -78,14 +77,14 @@ eSim-Automated-Tool-Manager/
 
 ### 1 Clone the Repository
 
-```bash command
+```bash
 git clone <your-private-repo-url>
 cd eSim-Automated-Tool-Manager
 ```
 
 ### 2️ Install Python Dependencies
 
-```bash command
+```bash
 pip install -r requirements.txt
 ```
 
@@ -94,8 +93,8 @@ pip install -r requirements.txt
 
 Run the Automated Tool Manager:
 
-```bash command
-python tool_manager.py
+```bash
+python main.py
 ```
 
 This will execute dependency checks and display the results in the terminal.
@@ -105,26 +104,32 @@ This will execute dependency checks and display the results in the terminal.
 
 ### Test OS Detection
 
-```bash command
-python -c "import os; print(os.name)"
+```bash
+python -c "import platform; print(platform.system())"
 ```
 
 ### Test Scilab Dependency Check
 
-```bash command
+```bash
 python -c "from dependency_checker import check_scilab; print(check_scilab())"
 ```
 
+> **Note:**  
+> On **Windows**, Scilab is detected via installation paths and executables  
+> (GUI-based installation, limited CLI support).  
+> On **Linux/macOS**, Scilab is detected using CLI-based version checks.
+
+
 ### Test Verilator Dependency Check
 
-```bash command
+```bash
 python -c "from dependency_checker import check_verilator; print(check_verilator())"
 ```
 
 ### Run Full Dependency Scan
 
-```bash command
-python tool_manager.py
+```bash
+python main.py
 ```
 
 
@@ -156,7 +161,10 @@ The repository is private and access has been granted to the evaluators as per s
 
 ---
 
-## Author
+## Authors
 
-Saumya Dwivedi (Contact-Us: saumya.23bce10331@vitbhopal.ac.in)
-Sakshi Mittal  (Contact-Us: sakshi.23bce11231@vitbhopal.ac.in)
+- **Saumya Dwivedi**  
+  📧 saumya.23bce10331@vitbhopal.ac.in
+
+- **Sakshi Mittal**  
+  📧 sakshi.23bce11231@vitbhopal.ac.in
