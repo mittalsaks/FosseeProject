@@ -187,6 +187,12 @@ docs/Design_Document.md
 * Graphical User Interface (GUI)
 * Deeper integration with eSim configuration
 
+## 🎥 Demo Video
+
+A short demo video (5–10 minutes) explaining the design, architecture, and working of the eSim Automated Tool Manager is available here:
+
+👉 **Demo Link:** https://drive.google.com/file/d/1SF1LpPBkxvQ76LZdaEiHhfGTZM0Pxfcf/view?usp=sharing
+
 
 ## Submission Notes
 
