@@ -17,6 +17,44 @@ This project provides:
 
 > **Note:** This prototype focuses on *Dependency Checker* and *User Interface* deliverables as required by the task.
 
+## Overall Architecture
+
+The Automated Tool Manager follows a modular architecture where each component has a clearly defined responsibility.
+
+```
++----------------------+
+|      User (CLI)      |
++----------+-----------+
+           |
+           v
++----------------------+
+|   Tool Manager CLI   |
+|      (main.py)       |
++----------+-----------+
+           |
+           v
++------------------------------+
+| Core Logic                   |
+| - OS Detection               |
+| - Tool Database Loader       |
++----------+-------------------+
+           |
+           v
++------------------------------+
+| Dependency Checker Module    |
+| (dependency_checker.py)      |
+| - System dependency checks   |
+| - Version detection          |
++----------+-------------------+
+           |
+           v
++------------------------------+
+| Output Formatter & Logger    |
+| - Console output             |
+| - Log files                  |
++------------------------------+
+```
+
 ##  Repository Structure
 ```
 eSim-Automated-Tool-Manager/
@@ -75,14 +113,14 @@ eSim-Automated-Tool-Manager/
 
 ## Installation & Setup
 
-### 1 Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone <your-private-repo-url>
 cd eSim-Automated-Tool-Manager
 ```
 
-### 2️ Install Python Dependencies
+### 2. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -100,7 +138,7 @@ python main.py
 This will execute dependency checks and display the results in the terminal.
 
 
-## 🧪 Testing Instructions
+## Testing Instructions
 
 ### Test OS Detection
 
