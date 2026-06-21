@@ -205,10 +205,3 @@ The repository is private and access has been granted to the evaluators as per s
 
 ---
 
-## Authors
-
-- **Saumya Dwivedi**  
-  📧 saumya.23bce10331@vitbhopal.ac.in
-
-- **Sakshi Mittal**  
-  📧 sakshi.23bce11231@vitbhopal.ac.in
